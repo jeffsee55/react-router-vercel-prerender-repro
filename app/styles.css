@@ -1,0 +1,132 @@
+:root {
+  color-scheme: light dark;
+  font-family:
+    Geist,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #050505;
+  color: #ededed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(0, 112, 243, 0.18), transparent 32rem),
+    #050505;
+}
+
+a {
+  color: inherit;
+}
+
+code {
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #111;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.9em;
+}
+
+.shell {
+  width: min(960px, calc(100vw - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.nav a,
+.route-list a {
+  border: 1px solid #333;
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  text-decoration: none;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  color: #a1a1aa;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2.25rem, 8vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  max-width: 720px;
+  color: #c9c9d1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.card {
+  border: 1px solid #252525;
+  border-radius: 20px;
+  background: rgba(12, 12, 12, 0.86);
+  margin-top: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+}
+
+.route-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+
+.facts {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 0;
+}
+
+.facts div {
+  border: 1px solid #252525;
+  border-radius: 14px;
+  padding: 0.85rem;
+}
+
+.facts dt {
+  color: #a1a1aa;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.facts dd {
+  margin: 0.35rem 0 0;
+  overflow-wrap: anywhere;
+}
